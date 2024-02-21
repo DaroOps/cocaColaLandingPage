@@ -1,3 +1,189 @@
 *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: bahnschrift;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+}
+
+.left{
+    position: absolute;
+    left: 0;
+    background: #000;
+    width: 70%;
+    height: 100%;
+} 
+
+.left h1{
+    color: red;
+    left: 10%;
+    top: 20%;
+    position: relative;
+    font-size: 60px;
+}
+
+.left p{
+    color: white;
+    width: 510px;
+    height: 200px;
+    position: relative;
+    left: 10%;
+    top: 34%;
+}
+
+.left .content-button{
+    width: 400px;
+    height: 100px;
+    left: 8%;
+    top: 22%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.content-button button{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    position: relative;
+    border: 3px solid red;
+    color: red;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.2s ease;
+}
+
+.content-button button:nth-child(1){
+    background-color: red;
+    color: white;
+}
+
+button:hover{
+    background: red;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.right{
+    width: 30%;
+    height: 100%;
+    right: 0;
+    background: red;
+    position: absolute;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 0;
+    position: absolute;
+}
+
+.container #logo{
+    color: red;
+    font-family: 'Coca Cola ii', sans-serif;
+    position: relative;
+    margin: 30px 100px;
+    font-weight: lighter;
+}
+
+.header{
+    display: flex;
+    justify-content: left;
+}
+
+.header .menu{
+    width: 500px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 35%;
+    position: absolute;
+    top: 0;
+}
+
+.menu a{
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    transition: 0.3 ease;
+    color: white;    
+}
+
+.menu a:nth-child(1){
+    color: red;
+    font-weight: bold;
+}
+
+.menu a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    background: red;
+}
+
+.menu a:hover{
+    color: red;
+    transition: 0.2s ease;
+}
+
+.menu a:hover::after{
+    width: 100%;
+    transition: 0.2s ease;
+}
+
+img{
+    height: 500px;
+    right: 20%;
+    top:17%;
+    position: absolute;
+}
+
+.media-shop{
+    right: 0;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-shop svg{
+    width: 20px;
+}
+
+.media-shop path{
+    fill: white;
+}
+
+.media-shop a{
+    margin: 20px;
+}
+
+.media-shop a:nth-child(1) svg{
+    width: 25px;
+}
+.media-shop a:nth-child(2) svg{
+    width: 14px;
 }
